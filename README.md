@@ -1,4 +1,4 @@
 ### cactus generated static site
 
-[hosted on s3 here](www.hernamesbarbara.com)
+[hosted on s3 here](https://www.hernamesbarbara.com)
 
