@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Just another blog named barbara.</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+    <meta name="tags" content="austin ogilvie, blog, yhat, yhathq" />
+    <meta name="authors" content="Austin Ogilvie" />
+    <meta name="summary" content="Austin Ogilvie Blog" />
+	<meta property="og:image" content="http://f.cl.ly/items/0d2Z1z3Z3E2z3Y1g1K0J/logo-square.png"/>
+	<meta property="og:site_name" content="hernamesbarbara"/>
+	<link rel="stylesheet" href="/static/css/style.css">
+
+	
+	<title>Welcome</title>
+	
+
+</head>
+<body>
+	
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		
+		// Add the missing url to the text
+		$("#url").text(window.location.pathname);
+		
+		// Fix the css locations dynamically
+		$("head link").each(function() {
+			for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
+				$(this).attr("href", "../" + $(this).attr("href"));
+		});
+		
+	})
+</script>
+
+<p>
+	Sorry the page <b id="url"></b> could not be found on this server.
+</p>
+
+
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="/static/js/main.js"></script>
+	
+</body>
+</html>
+ 
